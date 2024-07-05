@@ -6,13 +6,13 @@ export const sidebarLinks = [
     path: "/dashboard/my-profile",
     icon: "VscAccount",
   },
-  // {
-  //   id: 2,
-  //   name: "Dashboard",
-  //   path: "/dashboard/instructor",
-  //   type: Instructor,
-  //   icon: "VscDashboard",
-  // },
+  {
+    id: 2,
+    name: "Dashboard",
+    path: "/dashboard/instructor",
+    type: "Instructor",
+    icon: "VscDashboard",
+  },
   {
     id: 2,
     name: "My Courses",

@@ -17,7 +17,8 @@ export const endPoints={
 export const profileEndPoints={
     ENROLLED_COURSES_API:BASE_URL+"/profile/getEnrolledCourses",
     UPADATE_PROFILE_PIC_API:BASE_URL+"/profile/updateProfilePicture",
-    UPDATE_USER_API:BASE_URL+'/profile/updateUserDetails'
+    UPDATE_USER_API:BASE_URL+'/profile/updateUserDetails',
+    GET_INSTRUCTOR_DATA_API:BASE_URL+'/profile/instructorDashboard'
 }
 
 export const courseEndPoints={

@@ -26,6 +26,8 @@ import { Catalog } from './pages/Catalog.jsx';
 import { BuyNow } from './pages/BuyNow.jsx';
 import { VideoDetails } from './components/core/ViewCourse/VideoDetails.jsx';
 import { ViewCourse } from './pages/ViewCourse.jsx';
+import Instructor from './components/core/Dashboard/InstructorDashboard/Instructor.jsx';
+
 
 
 
@@ -79,6 +81,14 @@ function App() {
             </>
           )
         } 
+
+{
+          user?.accountType==='Instructor' && (
+            <>
+              <Route path='dashboard/instructor' element={<Instructor/>}/>
+            </>
+          )
+        }
 
 {
           user?.accountType==='Instructor' && (

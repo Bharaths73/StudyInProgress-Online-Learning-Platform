@@ -1,4 +1,5 @@
 const User=require('../models/User');
+const Course=require('../models/Course');
 const Profile=require('../models/Profile');
 const { uploadImageToCloudinary } = require('../utils/ImageUploader');
 
@@ -139,6 +140,36 @@ exports.updateProfilePicture=async(req,res)=>{
         })
     }
     catch(err){
+        return res.status(500).json({
+            success:false,
+            message:err.message
+        })
+    }
+}
+
+exports.instructorDashboard=async(req,res)=>{
+    try {
+        console.log("Entering controller");
+        const courseDetails=await Course.find({instructor:req.user.id});
+        const courseData=courseDetails.map((course)=>{
+            const totalStudentsEnrolled=course.studentsEnrolled.length;
+            const totalAmountGenerated=totalStudentsEnrolled*course.price;
+
+            const courseDataStats={
+                _id:course._id,
+                courseName:course.courseName,
+                courseDesc:course.courseDescription,
+                totalStudentsEnrolled,
+                totalAmountGenerated,
+            }
+            return courseDataStats
+        })
+
+        return res.status(200).json({
+            success:true,
+            data:courseData
+        })
+    } catch(err){
         return res.status(500).json({
             success:false,
             message:err.message
