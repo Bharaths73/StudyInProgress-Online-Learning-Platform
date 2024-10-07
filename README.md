@@ -27,12 +27,19 @@ StudyInProgress is a full-stack online learning platform designed for students a
 
 ## Screenshots
 ![Screenshot (221)](https://github.com/user-attachments/assets/d506fbae-5c10-40b6-b23f-5f7979d9d60d)
+
 ![Screenshot (222)](https://github.com/user-attachments/assets/6dd09be8-0711-4218-b40a-049f5cd289a8)
+
 ![Screenshot (223)](https://github.com/user-attachments/assets/03446da8-260d-4867-9c90-72c8f2b2cfca)
+
 ![Screenshot (224)](https://github.com/user-attachments/assets/51a44315-2ef7-4c82-9260-3126fb885626)
+
 ![Screenshot (225)](https://github.com/user-attachments/assets/ff5456fe-9031-45e6-8e82-411313bc7af1)
+
 ![Screenshot (226)](https://github.com/user-attachments/assets/64889cfd-b8d1-4c09-aeac-40adfd060ad4)
+
 ![Screenshot (227)](https://github.com/user-attachments/assets/76a7def6-e27c-49fd-9099-bf21bb11b14e)
+
 ![Screenshot (228)](https://github.com/user-attachments/assets/bd79410b-c8d3-4142-96d4-127f94e33916)
 
 
