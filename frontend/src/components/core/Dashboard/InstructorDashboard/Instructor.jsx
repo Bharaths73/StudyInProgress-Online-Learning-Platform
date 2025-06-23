@@ -41,18 +41,18 @@ const Instructor=()=>{
                 <div className='flex flex-row'>
                     <div className='flex md:flex-col lg:flex-row lg:justify-between lg:w-full'>
                         <InstructorChart courses={instructorData}/>
-                        <div className='flex flex-col gap-5 border-richblack-500 px-20 py-12 rounded-lg border-2 h-96'>
-                            <p className=' font-semibold text-2xl text-richblack-100'>Statistics</p>
+                        <div className='flex flex-col gap-5 border-richblack-500 px-14 py-10 rounded-xl border-2 h-96 bg-richblack-700'>
+                            <p className=' font-semibold text-2xl text-richblack-50'>Statistics</p>
                             <div className='flex flex-col gap-2 mt-2'>
-                                <p className='text-xl text-richblack-300'>Total Courses</p>
+                                <p className='text-xl text-richblack-200'>Total Courses</p>
                                 <p className='text-xl font-semibold text-richblack-300'>{courses.length}</p>
                             </div>
                             <div className='flex flex-col gap-2'>
-                            <p className='text-xl text-richblack-300'>Total Students</p>
+                            <p className='text-xl text-richblack-200'>Total Students</p>
                             <p className='text-xl font-semibold text-richblack-300'>{totalStudents}</p>
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <p className='text-xl text-richblack-300'>Total Income</p>
+                                <p className='text-xl text-richblack-200'>Total Income</p>
                                 <p className='text-xl font-semibold text-richblack-300'>{totalAmount}</p>
                                 </div>
                         </div>

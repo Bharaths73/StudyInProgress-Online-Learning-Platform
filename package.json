@@ -47,6 +47,7 @@
     "lilconfig": "^2.1.0",
     "lines-and-columns": "^1.2.4",
     "lru-cache": "^10.2.0",
+    "main_project": "file:",
     "merge2": "^1.4.1",
     "micromatch": "^4.0.5",
     "minimatch": "^9.0.3",

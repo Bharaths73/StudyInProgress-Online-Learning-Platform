@@ -20,13 +20,13 @@ export const ExploreMore = () => {
     }
 
   return (
-    <div>
-        <div>
-        <div className='font-semibold text-4xl text-center mt-16'>
+    <div className='sm:px-0 px-4'>
+        <div >
+        <div className='font-semibold text-4xl text-center mt-16 '>
             Unlock the <HighLightText text={"Power of Code"}/>
         </div>
 
-        <p className='text-center text-richblack-300 text-lg mt-3'>Learn to build anything you can imagine</p>
+        <p className='text-center text-richblack-300 text-lg mt-3 sm:mb-0 mb-3'>Learn to build anything you can imagine</p>
         </div>
         
 
@@ -34,7 +34,7 @@ export const ExploreMore = () => {
             {
                 tabsName.map((ele,index)=>(
                     (
-                        <div className={`text-[16px] flex flex-row items-center gap-2 ${currentTab===ele ? 'bg-richblack-900 text-richblack-5 font-medium':' text-richblack-200'} rounded-full transition-all duration-200 cursor-pointer hover:bg-richblack-900 hover:text-richblack-5 px-7 py-3`} 
+                        <div className={`text-[16px] flex flex-row items-center gap-2 ${currentTab===ele ? 'bg-richblack-900 text-richblack-5 font-medium':' text-richblack-200'} rounded-full transition-all duration-200 cursor-pointer hover:bg-richblack-900 hover:text-richblack-5 sm:px-7 py-3 px-2`} 
                         key={index} 
                         onClick={()=>setMyCards(ele)}
                         >

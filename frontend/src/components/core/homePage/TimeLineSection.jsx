@@ -31,8 +31,8 @@ export const TimeLineSection = () => {
   ]
   return (
     <div>
-      <div className='flex flex-row gap-20 items-center'>
-        <div className='flex flex-col w-[45%] gap-5'>
+      <div className='flex sm:flex-row flex-col sm:px-0 px-4 gap-20 items-center'>
+        <div className='flex flex-col sm:w-[45%] gap-5'>
           {
             timeLine.map((ele,index)=>(
               (
@@ -56,15 +56,15 @@ export const TimeLineSection = () => {
             <img src={timeLineImg} className='shadow-white abject-cover h-fit'/>
           </div>
 
-          <div className='absolute bg-caribbeangreen-700 flex flex-row text-white uppercase py-7 left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-            <div className='flex gap-5 items-center border-r border-caribbeangreen-300 px-7'>
-              <p className='text-3xl font-bold'>10</p>
-              <p className='text-caribbeangreen-300 text-sm'>Years of Experience</p>
+          <div className='absolute bg-caribbeangreen-700 flex flex-row text-white uppercase sm:py-7 py-5 left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+            <div className='flex gap-5 items-center border-r border-caribbeangreen-300 sm:px-7 px-3'>
+              <p className='sm:text-3xl text-xl font-bold'>10</p>
+              <p className='text-caribbeangreen-300 sm:text-sm text-xs'>Years of Experience</p>
             </div>
 
             <div className='flex gap-5 items-center px-7'>
-              <p className='text-3xl font-bold'>10</p>
-              <p className='text-caribbeangreen-300 text-sm'>Years of Experience</p>
+              <p className='sm:text-3xl text-xl font-bold'>10</p>
+              <p className='text-caribbeangreen-300 sm:text-sm text-xs'>Years of Experience</p>
             </div>
           </div>
         </div>

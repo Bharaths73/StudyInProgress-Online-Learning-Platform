@@ -48,12 +48,12 @@ export const Navbar = () => {
 
   return (
     <div className='flex lg:h-14 items-center justify-center border-b-[1px] border-b-richblack-700'>
-        <div className='flex w-11/12 max-w-maxContent items-center justify-between'>
-            <Link to={'/'}>
+        <div className='flex w-11/12 max-w-maxContent items-center justify-between md:flex-row flex-col md:gap-0 gap-7 md:mt-0 mt-5 md:mb-0 mb-5'>
+            <Link to={'/'}  >
                 <img src={logo} className='h-10'/>
             </Link>
             <nav>
-                <ul className='flex lg:flex-row gap-x-6 text-richblack-25'>
+                <ul className='flex md:flex-row flex-col md:gap-y-0 gap-y-5 items-center gap-x-6 text-richblack-25'>
                     {
                         NavbarLinks.map((e,index)=>(
                             (
@@ -65,7 +65,7 @@ export const Navbar = () => {
                                             <p>{e.title}</p>
                                             <IoIosArrowDown/>
 
-                                            <div className='invisible absolute left-[50%] top-[50%] flex flex-col rounded-md bg-richblack-5 p-4 text-richblack-900 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 lg:w-[300px] translate-x-[-50%] translate-y-[20%] z-20 gap-y-3'>
+                                            <div className='invisible absolute left-[50%] top-[50%] flex flex-col rounded-md bg-richblack-5 p-4 text-richblack-900 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 w-[300px] translate-x-[-50%] translate-y-[20%] z-20 gap-y-3 md:text-sm text-xs'>
                                                 <div className='absolute left-[50%] top-0 h-3.5 w-6 rotate-45 rounded bg-richblack-5 translate-y-[-20%] translate-x-[70%] '></div>
                                                 
                                                 {

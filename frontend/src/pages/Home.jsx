@@ -47,7 +47,7 @@ const Home = () => {
             </div>
 
             {/* code section 1* */}
-            <div>
+            <div >
                 <CodeBlocks 
                 position={"lg:flex-row"} 
                 heading={
@@ -132,12 +132,12 @@ const Home = () => {
             </div>
 
             <div className='mx-auto w-11/12 max-w-maxContent flex flex-col items-center gap-7 justify-between'>
-                <div className='flex flex-row justify-between mt-[95px] mb-16'>
-                    <div className='text-4xl font-semibold w-[45%]'>
+                <div className='flex sm:flex-row flex-col justify-between mt-[95px] mb-16 sm:px-0 px-4'>
+                    <div className='text-4xl font-semibold sm:w-[45%] w-full'>
                         Get the Skills you need for a <HighLightText text={"Job that is in demand"}/>
                     </div>
 
-                    <div className='flex flex-col gap-10 w-[40%] items-start'>
+                    <div className='flex flex-col gap-10 sm:w-[40%] w-full items-start'>
                     <div className='text-[16px]'>
                     The modern CourseStack is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.
                     </div>

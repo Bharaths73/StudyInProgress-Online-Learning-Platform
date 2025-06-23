@@ -35,7 +35,7 @@ function App() {
   const {user}=useSelector((state)=>state.profile)
   console.log("user account type is ",user?.accountType);
   return (
-    <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter">
+    <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter ">
       <Navbar/>
      <Routes>
         <Route path='/' element={<OpenRoute><Home/></OpenRoute>}/>

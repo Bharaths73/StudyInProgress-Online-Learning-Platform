@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setSignupData } from '../../../Slices/AuthSlice';
 import { sendOtp } from '../../../Services/operations/AuthApi';
 import { useNavigate } from 'react-router-dom';
+import { FcGoogle } from "react-icons/fc";
 
 export const SignUpForm = () => {
   const {user}=useSelector((state)=>state.profile)
@@ -23,7 +24,11 @@ export const SignUpForm = () => {
         confirmPassword:""
       }
     )
-
+    function clickHandler(e){
+      // e.preventDefault()
+      console.log("clicked google");
+      window.open("http://localhost:4000/api/v1/auth/google/signup","_self")
+    }
     const {email,firstName,lastName, password,confirmPassword}=signUpData;
     const [isVisible,setIsVisible]=useState(false)
 
@@ -83,25 +88,25 @@ export const SignUpForm = () => {
             <div>
               <Tab accountType={accountType} setAccountType={setAccountType} tabData={tabData}/>
         <form className='mt-7 flex flex-col gap-4' onSubmit={(e)=>onSubmitHandler(e)}>
-        <div className='flex gap-5'>
-          <div className='flex flex-col gap-2 w-[50%]'>
+        <div className='flex gap-5 lg:flex-row flex-col'>
+          <div className='flex flex-col gap-2 lg:w-[45%] w-full'>
             <label htmlFor='firstName' className='font-bold'>First Name <sup className="text-pink-200 text-sm">*</sup></label>
             <input type='text' name='firstName' value={signUpData.firstName} onChange={(e) => onChangeHandler(e)} className='border-b border-richblack-400 bg-richblack-700 rounded-md p-2 text-richblack-50 outline-none' placeholder='Enter first name' />
           </div>
 
-          <div className='flex flex-col gap-2 w-[50%]'>
+          <div className='flex flex-col gap-2 lg:w-[50%] w-full'>
             <label htmlFor='lastName' className='font-bold'>Last Name <sup className="text-pink-200 text-sm">*</sup></label>
             <input type='text' name='lastName' value={signUpData.lastName} onChange={(e) => onChangeHandler(e)} className='border-b border-richblack-400 bg-richblack-700 rounded-md p-2 text-richblack-50 outline-none' placeholder='Enter last name' />
           </div>
         </div>
 
-        <div className='flex flex-col gap-2 '>
+        <div className='flex flex-col gap-2 w-full'>
         <label htmlFor='email' className='font-bold'>Email Address <sup className="text-pink-200 text-sm">*</sup></label>
-                <input type='text' name='email' value={signUpData.email} onChange={(e)=>onChangeHandler(e)} className='border-b border-richblack-400 bg-richblack-700 rounded-md p-2 text-richblack-50 outline-none w-[100%]' placeholder='Enter email Address'/>
+                <input type='text' name='email' value={signUpData.email} onChange={(e)=>onChangeHandler(e)} className='border-b border-richblack-400 bg-richblack-700 rounded-md p-2 text-richblack-50 outline-none w-full' placeholder='Enter email Address'/>
                 </div>
 
-        <div className='flex gap-5 w-[100%]'>
-          <div className='flex flex-col gap-2 relative w-[50%]'>
+        <div className='flex gap-5 lg:flex-row flex-col'>
+          <div className='flex flex-col gap-2 relative lg:w-[45%] w-full'>
             <label htmlFor='password' className='font-bold'>Password <sup className='text-pink-200 text-sm'>*</sup></label>
             <input type={isVisible ? "text" : "password"} name='password' value={signUpData.password} onChange={(e) => onChangeHandler(e)} className='border-b border-richblack-400 bg-richblack-700 rounded-md p-2 text-richblack-50 outline-none' placeholder='Enter Password '>
             </input>
@@ -112,7 +117,7 @@ export const SignUpForm = () => {
             </span>
           </div>
 
-          <div className='flex flex-col gap-2 relative w-[50%]'>
+          <div className='flex flex-col gap-2 relative lg:w-[50%] w-full'>
             <label htmlFor='confirmPassword' className='font-bold'>Confirm Password <sup className='text-pink-200 text-sm'>*</sup></label>
             <input type={isVisible ? "text" : "password"} name='confirmPassword' value={signUpData.confirmPassword} onChange={(e) => onChangeHandler(e)} className='border-b border-richblack-400 bg-richblack-700 rounded-md p-2 text-richblack-50 outline-none' placeholder='Confirm Password '>
             </input>
@@ -129,6 +134,8 @@ export const SignUpForm = () => {
                   className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900">
                   Create Account
           </button>
+
+          {/* <button className='p-2 bg-white text-black rounded-md bg-opacity-80 w-full flex items-center justify-center' onClick={(e)=>clickHandler(e)}><FcGoogle className='text-2xl'/>oogle</button> */}
         </form>
 
             </div>

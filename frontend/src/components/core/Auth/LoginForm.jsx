@@ -9,7 +9,8 @@ import {useDispatch, useSelector } from 'react-redux';
 import { apiConnector } from '../../../Services/ApiConnector';
 import { endPoints } from '../../../Services/Api';
 import { loginAuth } from '../../../Services/operations/AuthApi';
-
+import { FcGoogle } from "react-icons/fc";
+import axios from 'axios';
 
 
 
@@ -23,6 +24,10 @@ export const LoginForm = () => {
             password:""
         }
     )
+    async function clickHandler(e){
+        // e.preventDefault()
+        window.open("http://localhost:4000/api/v1/auth/google/login","_self")
+      }
 
 const {email,password}=loginData;
 
@@ -82,6 +87,8 @@ const {email,password}=loginData;
                   className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900">
                   Sign In
               </button>
+
+              {/* <button className='p-2 bg-white text-black rounded-md bg-opacity-80 w-full flex items-center justify-center' onClick={(e)=>clickHandler(e)}><FcGoogle className='text-2xl'/>oogle</button> */}
         </form>
             )
         }

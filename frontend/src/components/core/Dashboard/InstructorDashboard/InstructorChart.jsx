@@ -7,9 +7,9 @@ const InstructorChart=({courses})=>{
     const chartInstance=useRef(null);
 
     useEffect(()=>{
-        // if(chartInstance.current){
-        //     chartInstance.current.destroy();
-        // }
+        if(chartInstance.current){
+            chartInstance.current.destroy();
+        }
         const myChartRef=chartRef.current.getContext('2d');
 
         chartInstance.current=new Chart(myChartRef,{
@@ -29,12 +29,12 @@ const InstructorChart=({courses})=>{
                 ]
             }
         })
-        // return ()=>{
-        //     if(chartInstance.current){
-        //         chartInstance.current.destroy();
-        //     }
-        // }
-    },[currChart])
+        return ()=>{
+            if(chartInstance.current){
+                chartInstance.current.destroy();
+            }
+        }
+    },[currChart,courses])
 
     const getRandomColors=(numColors)=>{
         const colors=[];

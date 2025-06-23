@@ -17,10 +17,10 @@ export const LearningLanguageSection = () => {
             Using spin making learning multiple languages easy. with 20+ languages realistic voice-over, progress tracking, custom schedule and more.
             </div>
 
-            <div className='relative flex flex-row items-center justify-center mt-5'>
-                <img src={knowYourProgress} className='object-cover -mr-32'/>
+            <div className='relative flex sm:flex-row flex-col items-center justify-center mt-5'>
+                <img src={knowYourProgress} className='object-cover sm:-mr-32'/>
                 <img src={compareWithOthers}/>
-                <img src={planYourLessons} className='object-cover -ml-36'/>
+                <img src={planYourLessons} className='object-cover sm:-ml-36'/>
             </div>
 
            <div className='w-fit mb-10'>
