@@ -5,6 +5,7 @@ import { setLoading, setToken } from "../../Slices/AuthSlice";
 import { setUser } from "../../Slices/ProfileSlice";
 import { useSelector } from "react-redux";
 
+//login
 export function loginAuth(email,password,navigate){
     return async(dispatch)=>{
         const toastId=toast.loading()
