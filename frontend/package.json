@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.7",
     "concurrently": "^8.2.2",
+    "chart.js": "^2.7.3",
     "frontend": "file:",
     "js-cookie": "^3.0.5",
     "react": "^18.2.0",
