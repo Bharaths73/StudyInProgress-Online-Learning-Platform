@@ -30,7 +30,7 @@ import Instructor from './components/core/Dashboard/InstructorDashboard/Instruct
 
 
 
-
+//start
 function App() {
   const {user}=useSelector((state)=>state.profile)
   console.log("user account type is ",user?.accountType);
