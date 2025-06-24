@@ -13,26 +13,28 @@ export const Catalog=()=>{
     const [catalogPageData,setCatalogPageData]=useState()
     const[categoryId,setCategoryId]=useState()
 
-    useEffect(()=>{
-        const getCategoryDetails=async()=>{
+    const getCategoryDetails=async()=>{
             const result=await apiConnector('GET',categories.CATEGORIES_API)
             const category_id=result?.data?.data?.filter((ct)=>ct.name.split(' ').join('-').toLowerCase()===catalogName)[0]._id
             console.log("category id from backend is ",category_id);
             setCategoryId(category_id)
         }
 
-            getCategoryDetails()
-
-    },[catalogName])
-
-    useEffect(()=>{
         const getCategoryPageDetails=async()=>{
             console.log("category id is ",categoryId);
             const result=await getCatalogPageData(categoryId)
             console.log("category details ",result);
             setCatalogPageData(result)
         }
-        getCategoryPageDetails()
+
+    useEffect(()=>{
+        getCategoryDetails()
+    },[catalogName])
+
+    useEffect(()=>{
+        if(categoryId){
+            getCategoryPageDetails()
+        }
     },[categoryId])
 
     return(

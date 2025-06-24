@@ -27,6 +27,7 @@ export const Navbar = () => {
         return matchPath({path:route},location.pathname)
     }
 
+   console.log("Sub links are ",subLinks);
    
 
     const fetchSubLinks=async()=>{

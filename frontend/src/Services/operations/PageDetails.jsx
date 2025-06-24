@@ -5,6 +5,8 @@ import { categoryPageEndPoints } from "../Api"
 export const getCatalogPageData=async(categoryId)=>{
     let result=[]
     const toastId=toast.loading("Loading...")
+    console.log("api for category id is ",categoryId);
+    
     try {
         const response=await apiConnector('POST',categoryPageEndPoints.CATALOG_API,{categoryId})
 

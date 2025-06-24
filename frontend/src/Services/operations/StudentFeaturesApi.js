@@ -2,7 +2,7 @@ import toast from "react-hot-toast";
 import { apiConnector } from "../ApiConnector";
 import { studentEndPoints } from "../Api";
 import { MdDescription } from "react-icons/md";
-import rzpLogo from '../../assests/Logo/rzp_logo.png'
+import rzpLogo from '../../assests/Logo/StudyInprogress.png'
 import { setPaymentLoading } from "../../Slices/CourseSlice";
 import { resetCart } from "../../Slices/CartSlice";
 const razorpayKey = process.env.REACT_APP_RAZORPAY_KEY;
