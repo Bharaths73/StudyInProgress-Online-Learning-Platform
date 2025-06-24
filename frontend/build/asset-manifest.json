@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.af757f65.css",
-    "main.js": "/static/js/main.651a0754.js",
+    "main.js": "/static/js/main.d389a8f8.js",
     "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
     "static/media/banner.mp4": "/static/media/banner.8e687823b1422880cc3f.mp4",
     "static/media/TimelineImage.png": "/static/media/TimelineImage.a610b1e5d891ac77fe93.png",
@@ -14,18 +14,17 @@
     "static/media/Know_your_progress.png": "/static/media/Know_your_progress.cf3ea1c51544985430d3.png",
     "static/media/StudyInprogress.png": "/static/media/StudyInprogress.6c140843ca9fe2a9b705.png",
     "static/media/login.webp": "/static/media/login.5eeb0b81544a40330d4b.webp",
-    "static/media/rzp_logo.png": "/static/media/rzp_logo.90dbf896539366e17c66.png",
     "static/media/aboutus1.webp": "/static/media/aboutus1.86606deea209badf5925.webp",
     "static/media/aboutus2.webp": "/static/media/aboutus2.0a1cd797ce3a69e81830.webp",
     "static/media/aboutus3.webp": "/static/media/aboutus3.f5cfba861877ea03735d.webp",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.af757f65.css.map": "/static/css/main.af757f65.css.map",
-    "main.651a0754.js.map": "/static/js/main.651a0754.js.map",
+    "main.d389a8f8.js.map": "/static/js/main.d389a8f8.js.map",
     "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af757f65.css",
-    "static/js/main.651a0754.js"
+    "static/js/main.d389a8f8.js"
   ]
 }
